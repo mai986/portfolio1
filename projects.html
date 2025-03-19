@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Developer Portfolio</title>
+		<script
+			src="https://kit.fontawesome.com/7dae1b1ce8.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="script.js"></script>
+	</head>
+	<body class="full-height">
+		<header>
+			<nav>
+				<div class="logo">Mir Developer</div>
+				<button class="menu-toggle">☰</button>
+				<ul class="nav-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="projects-content">
+			<h1>My Projects</h1>
+			<section class="projects-grid">
+				<div class="project-item">
+					<img src="./images/project-1.png" alt="Project 1 Screenshot" />
+					<div class="project-info">
+						<h2>Project 1</h2>
+						<p>
+							A brief description of the project. Technologies used: HTML, CSS,
+							JavaScript.
+						</p>
+					</div>
+				</div>
+
+				<div class="project-item">
+					<img src="./images/project-2.png" alt="Project 2 Screenshot" />
+					<div class="project-info">
+						<h2>Project 2</h2>
+						<p>
+							A brief description of the project. Technologies used: React,
+							Node.js.
+						</p>
+					</div>
+				</div>
+
+				<div class="project-item">
+					<img src="./images/project-3.png" alt="Project 3 Screenshot" />
+					<div class="project-info">
+						<h2>Project 3</h2>
+						<p>
+							A brief description of the project. Technologies used: PHP, MySQL.
+						</p>
+					</div>
+				</div>
+
+				<div class="project-item">
+					<img src="./images/project-4.png" alt="Project 4 Screenshot" />
+					<div class="project-info">
+						<h2>Project 4</h2>
+						<p>
+							A brief description of the project. Technologies used: Python,
+							Django.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>&copy; 2025 My Portfolio</p>
+		</footer>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const menuToggle = document.querySelector(".menu-toggle");
+				const navLinks = document.querySelector(".nav-links");
+
+				menuToggle.addEventListener("click", function () {
+					navLinks.classList.toggle("active");
+				});
+			});
+		</script>
+	</body>
+</html>

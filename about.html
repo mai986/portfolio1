@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Developer Portfolio</title>
+		<script
+			src="https://kit.fontawesome.com/7dae1b1ce8.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="script.js"></script>
+	</head>
+	<body class="full-height">
+		<header>
+			<nav>
+				<div class="logo">Mir Developer</div>
+				<button class="menu-toggle">☰</button>
+				<ul class="nav-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="about-content" class="about-section">
+			<img src="./images/profile.jpg" alt="Your Profile Picture" />
+			<div class="about-text">
+				<h1>Hi! I'm Mia, a frontend Developer.</h1>
+				<h2>
+					I'm a Front-End Web Developer passionate about creating clean,
+					responsive websites.
+				</h2>
+				<p>
+					I’ve enjoyed tinkering with computers since I was a kid. I was the one
+					making custom designs and experimenting with websites. My interest has
+					shifted to building beautiful web pages with great user experiences.
+				</p>
+				<p>
+					When I’m not coding, I love exploring new technologies and working on
+					side projects that enhance my skills.
+				</p>
+				<p><strong>Can't wait to work with you!</strong></p>
+			</div>
+		</main>
+
+		<footer>
+			<p>&copy; 2025 My Portfolio</p>
+		</footer>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const menuToggle = document.querySelector(".menu-toggle");
+				const navLinks = document.querySelector(".nav-links");
+
+				menuToggle.addEventListener("click", function () {
+					navLinks.classList.toggle("active");
+				});
+			});
+		</script>
+	</body>
+</html>

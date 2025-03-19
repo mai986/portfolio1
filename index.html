@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Developer Portfolio</title>
+		<script
+			src="https://kit.fontawesome.com/7dae1b1ce8.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="script.js"></script>
+	</head>
+	<body class="full-height">
+		<header>
+			<nav>
+				<div class="logo">Mir Developer</div>
+				<button class="menu-toggle">☰</button>
+				<ul class="nav-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="content">
+			<section class="hero">
+				<h1>Hey, I'm Mia, Your local developer</h1>
+				<p>
+					I'm a web developer passionate about creating dynamic and responsive
+					websites.
+				</p>
+				<a href="projects.html" class="cta-button">Projects</a>
+			</section>
+		</main>
+
+		<div class="social-icons">
+			<ul>
+				<a href="https://www.facebook.com/" target="_blank" class="pe-3"
+					><i class="fa-brands fa-facebook fa-xl"></i
+				></a>
+				<a href="https://www.instagram.com/" target="_blank" class="pe-3"
+					><i class="fa-brands fa-instagram fa-xl"></i
+				></a>
+				<a href="https://www.youtube.com/" target="_blank" class="pe-3"
+					><i class="fa-brands fa-youtube fa-xl"></i
+				></a>
+				<a href="https://x.com/x." target="_blank" class="pe-3"
+					><i class="fa-brands fa-x-twitter"></i
+				></a>
+			</ul>
+		</div>
+
+		<div class="chat-button">Chat with me 👋</div>
+		<footer>
+			<p>&copy; 2025 My Portfolio</p>
+		</footer>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const menuToggle = document.querySelector(".menu-toggle");
+				const navLinks = document.querySelector(".nav-links");
+
+				menuToggle.addEventListener("click", function () {
+					navLinks.classList.toggle("active");
+				});
+			});
+		</script>
+	</body>
+</html>

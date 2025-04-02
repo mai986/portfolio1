@@ -1,3 +1,4 @@
+/* General styling */
 :root {
 	--sky-blue: #8ecae6ff;
 	--blue-green: #219ebcff;
@@ -25,6 +26,16 @@ body {
 	flex-grow: 1;
 }
 
+main {
+	text-align: center;
+	padding: 2rem;
+}
+
+/* .wrapper {
+	width: 90%;
+} */
+
+/* HEADER */
 header {
 	background-color: var(--blue-green);
 	padding: 1rem;
@@ -84,6 +95,7 @@ nav {
 	display: flex;
 }
 
+/* Media Queries */
 @media (min-width: 768px) {
 	.menu-toggle {
 		display: none;
@@ -97,11 +109,12 @@ nav {
 	}
 }
 
-main {
+/* main {
 	text-align: center;
 	padding: 2rem;
-}
+} */
 
+/* FOOTER */
 footer {
 	background-color: var(--ut-orange);
 	padding: 1rem;
@@ -109,7 +122,7 @@ footer {
 	color: white;
 }
 
-/* homepage  */
+/* HOMEPAGE  */
 .hero {
 	text-align: center;
 	padding: 5rem 2rem;
@@ -127,6 +140,7 @@ footer {
 	margin: 1rem 0;
 }
 
+/* General buttons */
 .cta-button {
 	display: inline-block;
 	background-color: var(--ut-orange);
@@ -138,7 +152,7 @@ footer {
 	font-weight: bold;
 }
 
-/* Social Icons - Fixed on Left */
+/* Social Icons */
 .social-icons {
 	position: fixed;
 	left: 20px;
@@ -147,7 +161,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-	z-index: 1000; /* Ensure they are above other content */
+	z-index: 1000;
 }
 
 .social-icons a {
@@ -169,7 +183,7 @@ footer {
 	transform: scale(1.1);
 }
 
-/* Chat Button - Fixed at Bottom Right */
+/* Chat Button */
 .chat-button {
 	position: fixed;
 	bottom: 20px;
@@ -193,7 +207,7 @@ footer {
 	transform: scale(1.05);
 }
 
-/* Mobile Adjustments */
+/* Media Queries */
 @media (max-width: 768px) {
 	.social-icons {
 		left: 10px; /* Keep it aligned well for mobile */
@@ -252,7 +266,7 @@ footer {
 	font-weight: bold;
 }
 
-/* Responsive Design */
+/* Media Queries */
 @media (min-width: 768px) {
 	.about-section {
 		flex-direction: row;
@@ -266,7 +280,7 @@ footer {
 	}
 }
 
-/* project page  */
+/* PROJECT PAGE  */
 /* Project Showcase */
 .projects-grid {
 	display: flex;
@@ -303,6 +317,7 @@ footer {
 	max-width: 500px;
 }
 
+/* Media Queries */
 @media (min-width: 768px) {
 	.project-item {
 		display: flex;
@@ -376,4 +391,56 @@ footer {
 
 .contact-form button:hover {
 	background-color: var(--selective-yellow);
+}
+
+/* MAP */
+/* ===== CONTACT MAP ===== */
+.map-responsive {
+	max-width: 1200px;
+	margin: 2rem auto;
+	padding: 0 1rem;
+}
+
+.map-title {
+	text-align: center;
+	color: #35424a;
+	margin-bottom: 1.5rem;
+	font-size: 1.8rem;
+}
+
+.map-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+	height: 0;
+	overflow: hidden;
+	border-radius: 8px;
+	/* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.google-map {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+	/* MAP */
+	.map-responsive {
+		padding: 0 0.5rem;
+	}
+
+	.map-title {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.map-wrapper {
+		padding-bottom: 75%; /* Taller aspect ratio for mobile */
+	}
 }

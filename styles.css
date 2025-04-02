@@ -169,6 +169,43 @@ footer {
 	transform: scale(1.1);
 }
 
+/* Social Icons - Blog Page Specific (bottom of page) */
+.social-icons-blog {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 25px;
+	padding: 30px 0;
+	margin-top: 40px;
+	background: #f8f9fa;
+	border-top: 1px solid #e9ecef;
+}
+
+.social-icons-blog ul {
+	display: flex;
+	gap: 5px;
+}
+
+.social-icons-blog a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #023047;
+	/* background: white; */
+	border-radius: 50%;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease;
+}
+
+.social-icons-blog a:hover {
+	transform: scale(1.1);
+}
+
 /* Chat Button - Fixed at Bottom Right */
 .chat-button {
 	position: fixed;
@@ -376,4 +413,101 @@ footer {
 
 .contact-form button:hover {
 	background-color: var(--selective-yellow);
+}
+
+/* BLOG PAGE */
+/* Blog Section Styles */
+.blog {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding: 2rem;
+	justify-content: center;
+}
+
+.blog article {
+	background: white;
+	border-radius: 8px;
+	padding: 1.5rem;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	margin-bottom: 2rem;
+}
+
+/* Mobile (default): Single column */
+.blog article {
+	flex: 1 1 100%;
+	max-width: 100%;
+}
+
+/* Tablet (768px and up): 2 columns */
+@media (min-width: 768px) {
+	.blog article {
+		flex: 1 1 calc(50% - 2rem);
+		max-width: calc(50% - 2rem);
+	}
+}
+
+/* Desktop (1024px and up): 3 columns */
+@media (min-width: 1024px) {
+	.blog article {
+		flex: 1 1 calc(33.333% - 2rem);
+		max-width: calc(33.333% - 2rem);
+	}
+}
+
+/* Large Desktop (1200px and up): 4 columns */
+@media (min-width: 1200px) {
+	.blog article {
+		flex: 1 1 calc(25% - 2rem);
+		max-width: calc(25% - 2rem);
+	}
+}
+
+/* Blog Title Styling */
+.blog-title {
+	text-align: center;
+	padding: 2rem 0;
+	background: #f8f9fa;
+	margin-bottom: 2rem;
+}
+
+.blog-title h1 {
+	font-size: 2.5rem;
+	color: #35424a;
+	margin-bottom: 0.5rem;
+}
+
+.blog-title h2 {
+	font-size: 1.5rem;
+	color: #6c757d;
+	font-weight: normal;
+}
+
+/* Article Content Styling */
+.blog article h2 {
+	color: #35424a;
+	margin-top: 0;
+}
+
+.blog article h3 {
+	color: #495057;
+	margin: 1.5rem 0 0.5rem;
+}
+
+.blog article p,
+.blog article li {
+	color: #6c757d;
+	line-height: 1.6;
+}
+
+.blog article pre {
+	background: #f8f9fa;
+	padding: 1rem;
+	border-radius: 4px;
+	overflow-x: auto;
+}
+
+.blog article code {
+	font-family: "Courier New", monospace;
+	color: #d63384;
 }

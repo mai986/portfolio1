@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Developer Portfolio</title>
+		<script
+			src="https://kit.fontawesome.com/7dae1b1ce8.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="script.js"></script>
+	</head>
+	<body class="full-height">
+		<header>
+			<nav>
+				<div class="logo">Mia Developer</div>
+				<button class="menu-toggle">☰</button>
+				<ul class="nav-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="content">
+			<section class="blog-title">
+				<h1>Welcome to My Blog!</h1>
+				<h2>A place for thoughts, stories, and ideas.</h2>
+			</section>
+
+			<section class="blog">
+				<article>
+					<h2>My First Blog Post: Getting Started with Git Branches</h2>
+					<p><em>Published on: May 30, 2024</em></p>
+
+					<p>
+						Today, I dove into the world of Git branches—a powerful feature that
+						lets developers work on multiple features simultaneously without
+						messing up the main codebase. Here’s what I learned:
+					</p>
+
+					<h3>Why Use Branches?</h3>
+					<ul>
+						<li>
+							<strong>Isolation:</strong> Work on new features or fixes without
+							affecting the main project.
+						</li>
+						<li>
+							<strong>Collaboration:</strong> Team members can work on different
+							tasks in parallel.
+						</li>
+						<li>
+							<strong>Experimentation:</strong> Test ideas risk-free—just delete
+							the branch if things go wrong!
+						</li>
+					</ul>
+
+					<h3>Key Commands</h3>
+					<pre><code>git checkout -b new-feature  # Create and switch to a new branch
+  git push -u origin new-feature  # Publish branch to GitHub
+  git merge new-feature  # Merge changes back to main</code></pre>
+
+					<p>
+						Branches might seem intimidating at first, but they’re a
+						game-changer for organized coding. Next, I’ll explore merging and
+						resolving conflicts—wish me luck!
+					</p>
+				</article>
+
+				<article>
+					<h2>My Web Development Journey</h2>
+					<p><em>Published on: May 25, 2024</em></p>
+
+					<p>
+						Six months ago, I wrote my first "Hello World" in HTML. Now, I’m
+						building full projects with Git, CSS, and JavaScript! Here’s my
+						progress:
+					</p>
+
+					<h3>Milestones</h3>
+					<ol>
+						<li>Built a personal portfolio site.</li>
+						<li>Learned responsive design (thanks, Flexbox!).</li>
+						<li>Started using version control with Git/GitHub.</li>
+					</ol>
+
+					<p>
+						The best part? The dev community is incredibly supportive. If you’re
+						just starting out—keep going! It gets easier (and more fun).
+					</p>
+				</article>
+			</section>
+		</main>
+
+		<div class="social-icons-blog">
+			<ul>
+				<a href="https://www.facebook.com/" target="_blank" class="pe-3"
+					><i class="fa-brands fa-facebook fa-xl"></i
+				></a>
+				<a href="https://www.instagram.com/" target="_blank" class="pe-3"
+					><i class="fa-brands fa-instagram fa-xl"></i
+				></a>
+				<a href="https://www.youtube.com/" target="_blank" class="pe-3"
+					><i class="fa-brands fa-youtube fa-xl"></i
+				></a>
+				<a href="https://x.com/x." target="_blank" class="pe-3"
+					><i class="fa-brands fa-x-twitter"></i
+				></a>
+			</ul>
+		</div>
+
+		<div class="chat-button">Chat with me 👋</div>
+		<footer>
+			<p>&copy; 2025 My Portfolio</p>
+		</footer>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const menuToggle = document.querySelector(".menu-toggle");
+				const navLinks = document.querySelector(".nav-links");
+
+				menuToggle.addEventListener("click", function () {
+					navLinks.classList.toggle("active");
+				});
+			});
+		</script>
+	</body>
+</html>
